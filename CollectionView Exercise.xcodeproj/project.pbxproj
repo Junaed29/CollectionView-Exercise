@@ -13,6 +13,8 @@
 		E4E86D4E2937CD4D001E27AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4E86D4C2937CD4D001E27AC /* Main.storyboard */; };
 		E4E86D502937CD54001E27AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4E86D4F2937CD54001E27AC /* Assets.xcassets */; };
 		E4E86D532937CD54001E27AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4E86D512937CD54001E27AC /* LaunchScreen.storyboard */; };
+		E4E86D5B2937CDEE001E27AC /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E86D5A2937CDEE001E27AC /* Movie.swift */; };
+		E4E86D5D2937CF69001E27AC /* MovieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4E86D5C2937CF69001E27AC /* MovieCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		E4E86D4F2937CD54001E27AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4E86D522937CD54001E27AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4E86D542937CD54001E27AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4E86D5A2937CDEE001E27AC /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		E4E86D5C2937CF69001E27AC /* MovieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				E4E86D462937CD4D001E27AC /* AppDelegate.swift */,
 				E4E86D482937CD4D001E27AC /* SceneDelegate.swift */,
 				E4E86D4A2937CD4D001E27AC /* ViewController.swift */,
+				E4E86D5A2937CDEE001E27AC /* Movie.swift */,
 				E4E86D4C2937CD4D001E27AC /* Main.storyboard */,
 				E4E86D4F2937CD54001E27AC /* Assets.xcassets */,
 				E4E86D512937CD54001E27AC /* LaunchScreen.storyboard */,
 				E4E86D542937CD54001E27AC /* Info.plist */,
+				E4E86D5C2937CF69001E27AC /* MovieCollectionViewCell.swift */,
 			);
 			path = "CollectionView Exercise";
 			sourceTree = "<group>";
@@ -140,6 +146,8 @@
 			files = (
 				E4E86D4B2937CD4D001E27AC /* ViewController.swift in Sources */,
 				E4E86D472937CD4D001E27AC /* AppDelegate.swift in Sources */,
+				E4E86D5D2937CF69001E27AC /* MovieCollectionViewCell.swift in Sources */,
+				E4E86D5B2937CDEE001E27AC /* Movie.swift in Sources */,
 				E4E86D492937CD4D001E27AC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +224,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -295,6 +303,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +311,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junaed.CollectionView-Exercise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +335,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +343,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.junaed.CollectionView-Exercise";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
